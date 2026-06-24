@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"grp_processo","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Processo — Monocariontes → Dicarion"},
+		{"id":"grp_estado","type":"group","x":80,"y":-450,"width":1200,"height":360,"label":"Estado resultante — Dicarion e suas propriedades"},
+		{"id":"grp_fronteira","type":"group","x":80,"y":0,"width":1200,"height":360,"label":"Fronteira — Resolução e investigação"},
+		{"id":"foco","type":"file","file":"Notas/Anastomose hifal e dikaryotização.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"fatores","type":"file","file":"Notas/Fatores de acasalamento A e B.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"dicarionte","type":"file","file":"Notas/Dicarionte.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"grampo","type":"file","file":"Notas/Conexão de grampo.md","x":610,"y":-400,"width":400,"height":260},
+		{"id":"lacunas","type":"file","file":"Pesquisa/Lacunas de evidência e protocolos de pesquisa.md","x":110,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_fatores_foco","fromNode":"fatores","fromSide":"left","toNode":"foco","toSide":"right","label":"codifica compatibilidade"},
+		{"id":"e_foco_dicarionte","fromNode":"foco","fromSide":"right","toNode":"dicarionte","toSide":"left","label":"produz o estado"},
+		{"id":"e_foco_grampo","fromNode":"foco","fromSide":"right","toNode":"grampo","toSide":"left","label":"inicia formação de"},
+		{"id":"e_foco_lacunas","fromNode":"foco","fromSide":"right","toNode":"lacunas","toSide":"left","label":"mecanismo pré-fusão não resolvido"}
+	]
+}

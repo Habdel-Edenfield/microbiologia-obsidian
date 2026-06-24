@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 02 — Obtendo esporos.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"grp_genetica","type":"group","x":400,"y":-900,"width":1200,"height":360,"color":"3","label":"Genética do esporo — diversidade e compatibilidade"},
+		{"id":"grp_propagacao","type":"group","x":400,"y":-450,"width":1200,"height":360,"label":"Propagação — formas de inóculo e estado nuclear"},
+		{"id":"grp_conservacao","type":"group","x":400,"y":0,"width":1200,"height":360,"label":"Conservação e seleção — germoplasma a longo prazo"},
+		{"id":"dicarionte","type":"file","file":"Notas/Dicarionte.md","x":430,"y":-850,"width":400,"height":260},
+		{"id":"fatores","type":"file","file":"Notas/Fatores de acasalamento A e B.md","x":1160,"y":-850,"width":400,"height":260},
+		{"id":"propagacao","type":"file","file":"Notas/Propagação vegetativa.md","x":430,"y":-400,"width":400,"height":260},
+		{"id":"anastomose","type":"file","file":"Notas/Anastomose hifal e dikaryotização.md","x":1160,"y":-400,"width":400,"height":260},
+		{"id":"senescencia","type":"file","file":"Notas/Senescência clonal.md","x":430,"y":50,"width":400,"height":260},
+		{"id":"morfologia","type":"file","file":"Notas/Morfologia colonial do micélio.md","x":1160,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_dicarionte","fromNode":"foco","fromSide":"right","toNode":"dicarionte","toSide":"left","label":"esporo germina em monocarion — dicarion é o estado fértil"},
+		{"id":"e_foco_fatores","fromNode":"foco","fromSide":"right","toNode":"fatores","toSide":"left","label":"compatibilidade A×B determina 25% dos pares aptos"},
+		{"id":"e_foco_propagacao","fromNode":"foco","fromSide":"right","toNode":"propagacao","toSide":"left","label":"LC e clonagem são propagação vegetativa do dicarion"},
+		{"id":"e_foco_anastomose","fromNode":"foco","fromSide":"right","toNode":"anastomose","toSide":"left","label":"multi-espore exige anastomose in situ para dikaryotizar"},
+		{"id":"e_foco_senescencia","fromNode":"foco","fromSide":"right","toNode":"senescencia","toSide":"left","label":"propagação clonal excessiva acumula epimutações"},
+		{"id":"e_foco_morfologia","fromNode":"foco","fromSide":"right","toNode":"morfologia","toSide":"left","label":"fenótipo colonial — critério de seleção do clone"}
+	]
+}

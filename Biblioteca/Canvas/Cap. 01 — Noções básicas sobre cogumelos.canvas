@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 01 — Noções básicas sobre cogumelos.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"grp_biologia","type":"group","x":400,"y":-900,"width":1200,"height":360,"color":"3","label":"Biologia do organismo — fundamento genético"},
+		{"id":"grp_fenotipo","type":"group","x":400,"y":-450,"width":1200,"height":360,"label":"Fenótipo colonial — leitura e diagnóstico"},
+		{"id":"grp_cultivo","type":"group","x":400,"y":0,"width":1200,"height":360,"label":"Controle do cultivo — gatilhos e vigor"},
+		{"id":"dicarionte","type":"file","file":"Notas/Dicarionte.md","x":430,"y":-850,"width":400,"height":260},
+		{"id":"anastomose","type":"file","file":"Notas/Anastomose hifal e dikaryotização.md","x":1160,"y":-850,"width":400,"height":260},
+		{"id":"micelio_emergente","type":"file","file":"Notas/Micélio como fenótipo emergente.md","x":430,"y":-400,"width":400,"height":260},
+		{"id":"morfologia","type":"file","file":"Notas/Morfologia colonial do micélio.md","x":1160,"y":-400,"width":400,"height":260},
+		{"id":"inducao","type":"file","file":"Notas/Indução de frutificação — sinais ambientais.md","x":430,"y":50,"width":400,"height":260},
+		{"id":"rizomorfico","type":"file","file":"Notas/Crescimento rizomórfico.md","x":1160,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_dicarionte","fromNode":"foco","fromSide":"right","toNode":"dicarionte","toSide":"left","label":"estado fértil — dicarion frutifica"},
+		{"id":"e_foco_anastomose","fromNode":"foco","fromSide":"right","toNode":"anastomose","toSide":"left","label":"fusão compatível forma o dicarion"},
+		{"id":"e_foco_micelio","fromNode":"foco","fromSide":"right","toNode":"micelio_emergente","toSide":"left","label":"micélio é o organismo real"},
+		{"id":"e_foco_morfologia","fromNode":"foco","fromSide":"right","toNode":"morfologia","toSide":"left","label":"fenótipo colonial como diagnóstico de vigor"},
+		{"id":"e_foco_inducao","fromNode":"foco","fromSide":"right","toNode":"inducao","toSide":"left","label":"gatilhos ambientais controlados no cultivo"},
+		{"id":"e_foco_rizomorfico","fromNode":"foco","fromSide":"right","toNode":"rizomorfico","toSide":"left","label":"preditor de vigor e frutificação iminente"}
+	]
+}

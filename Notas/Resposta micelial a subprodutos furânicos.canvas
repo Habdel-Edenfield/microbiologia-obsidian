@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"grp_contexto","type":"group","x":80,"y":-450,"width":1200,"height":660,"label":"Substrato e contexto de cultivo"},
+		{"id":"grp_origem","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Origem dos estressores — Processamento térmico"},
+		{"id":"grp_limiar","type":"group","x":80,"y":300,"width":1200,"height":360,"label":"Limiar de tolerância — Investigação aberta"},
+		{"id":"foco","type":"file","file":"Notas/Resposta micelial a subprodutos furânicos.md","x":-1000,"y":-900,"width":800,"height":1560},
+		{"id":"maillard","type":"file","file":"Notas/Reação de Maillard em esterilização úmida de grãos.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"composicao","type":"file","file":"Notas/Composição química de cereais para spawn.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"validade","type":"file","file":"Notas/Validade preditiva do cultivo em ágar.md","x":110,"y":-100,"width":400,"height":260},
+		{"id":"lacunas","type":"file","file":"Pesquisa/Lacunas de evidência e protocolos de pesquisa.md","x":110,"y":350,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_maillard_foco","fromNode":"maillard","fromSide":"bottom","toNode":"foco","toSide":"right","label":"gera estressores"},
+		{"id":"e_composicao_foco","fromNode":"composicao","fromSide":"right","toNode":"foco","toSide":"right","label":"determina carga de estressores"},
+		{"id":"e_foco_validade","fromNode":"foco","fromSide":"right","toNode":"validade","toSide":"left","label":"resposta determina validade preditiva"},
+		{"id":"e_foco_lacunas","fromNode":"foco","fromSide":"right","toNode":"lacunas","toSide":"left","label":"limiar não quantificado"}
+	]
+}

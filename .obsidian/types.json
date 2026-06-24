@@ -1,0 +1,22 @@
+{
+  "types": {
+    "tipo": "text",
+    "bloco": "text",
+    "aula-origem": "multitext",
+    "canvas": "text",
+    "fontes-primárias": "multitext",
+    "fontes-chave": "multitext",
+    "organismos": "multitext",
+    "relacionados": "multitext",
+    "confiança": "text",
+    "eixos": "multitext",
+    "status": "text",
+    "prioridade": "number",
+    "ferramenta-alvo": "text",
+    "numero": "number",
+    "data": "date",
+    "título": "text",
+    "paginas": "text",
+    "capítulo": "text"
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"grp_genotipo","type":"group","x":280,"y":-940,"width":640,"height":360,"color":"3","label":"Genótipo e plasticidade — Contexto teórico"},
+		{"id":"grp_sinais","type":"group","x":280,"y":-460,"width":640,"height":360,"label":"Sinais ambientais — Mecanismo de comutação"},
+		{"id":"grp_fronteira","type":"group","x":280,"y":0,"width":640,"height":360,"label":"Fronteira aberta — Investigação molecular"},
+		{"id":"foco","type":"file","file":"Notas/Plasticidade morfológica e dimorfismo fenotípico.md","x":-1000,"y":-900,"width":800,"height":1460},
+		{"id":"mecanossensibilidade","type":"file","file":"Notas/Mecanossensibilidade hifal.md","x":400,"y":-410,"width":400,"height":260},
+		{"id":"micelio","type":"file","file":"Notas/Micélio como fenótipo emergente.md","x":310,"y":-890,"width":400,"height":260},
+		{"id":"lacunas","type":"file","file":"Pesquisa/Lacunas de evidência e protocolos de pesquisa.md","x":310,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_micelio_foco","fromNode":"micelio","fromSide":"left","toNode":"foco","toSide":"right","label":"plasticidade como caso de"},
+		{"id":"e_foco_mecanossensibilidade","fromNode":"foco","fromSide":"right","toNode":"mecanossensibilidade","toSide":"left","label":"sinais comuns de transdução"},
+		{"id":"e_foco_lacunas","fromNode":"foco","fromSide":"right","toNode":"lacunas","toSide":"left","label":"comutador molecular não identificado"}
+	]
+}

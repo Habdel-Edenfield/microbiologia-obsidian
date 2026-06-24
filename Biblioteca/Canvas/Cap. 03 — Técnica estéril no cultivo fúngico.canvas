@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"grp_vetores","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Vetores e fontes de contaminação"},
+		{"id":"grp_inóculo","type":"group","x":80,"y":-450,"width":1200,"height":360,"label":"Métodos de inóculo e risco associado"},
+		{"id":"grp_contexto","type":"group","x":80,"y":0,"width":1200,"height":360,"label":"Substrato e contexto de aplicação"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 03 — Técnica estéril no cultivo fúngico.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"contaminantes","type":"file","file":"Biblioteca/Cap. 11 — Contaminantes — diagnóstico e prevenção.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"cultura_liq","type":"file","file":"Biblioteca/Cap. 07 — Cultura líquida fúngica.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"spawn_grao","type":"file","file":"Biblioteca/Cap. 08 — Spawn de grão — preparação e uso.md","x":110,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_cont_foco","fromNode":"contaminantes","fromSide":"left","toNode":"foco","toSide":"right","label":"define critérios de falha"},
+		{"id":"e_foco_lc","fromNode":"foco","fromSide":"right","toNode":"cultura_liq","toSide":"left","label":"condiciona preparo de inóculo"},
+		{"id":"e_foco_spawn","fromNode":"foco","fromSide":"right","toNode":"spawn_grao","toSide":"left","label":"governa inoculação de grão"}
+	]
+}

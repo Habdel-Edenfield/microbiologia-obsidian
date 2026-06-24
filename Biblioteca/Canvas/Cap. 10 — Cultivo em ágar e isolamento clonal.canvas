@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"grp_formulacao","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Formulação e meios de ágar"},
+		{"id":"grp_trabalho","type":"group","x":80,"y":-450,"width":1200,"height":360,"label":"Trabalho em MEA/PDA e fenotipagem"},
+		{"id":"grp_uso","type":"group","x":80,"y":0,"width":1200,"height":360,"label":"Uso do clone e propagação"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 10 — Cultivo em ágar e isolamento clonal.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"composicao","type":"file","file":"Notas/Composição química de cereais para spawn.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"esteril","type":"file","file":"Biblioteca/Cap. 03 — Técnica estéril no cultivo fúngico.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"lc","type":"file","file":"Biblioteca/Cap. 07 — Cultura líquida fúngica.md","x":110,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_comp_foco","fromNode":"composicao","fromSide":"left","toNode":"foco","toSide":"right","label":"base nutricional dos meios de cultivo"},
+		{"id":"e_foco_est","fromNode":"foco","fromSide":"right","toNode":"esteril","toSide":"left","label":"requer ambiente estéril para isolamento"},
+		{"id":"e_foco_lc","fromNode":"foco","fromSide":"right","toNode":"lc","toSide":"left","label":"tecido selecionado alimenta LC clonal"}
+	]
+}

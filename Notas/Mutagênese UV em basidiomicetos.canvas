@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"grp_nuclear","type":"group","x":-720,"y":-600,"width":1200,"height":360,"color":"3","label":"Estágio 1 — Obstáculo nuclear e escolha do alvo"},
+		{"id":"grp_reparo","type":"group","x":520,"y":-40,"width":1200,"height":360,"label":"Estágio 2 — Dano UV-C e calibração do protocolo"},
+		{"id":"grp_triagem","type":"group","x":1760,"y":-600,"width":1200,"height":360,"label":"Estágio 3 — Triagem e conservação do germoplasma"},
+		{"id":"foco","type":"file","file":"Notas/Mutagênese UV em basidiomicetos.md","x":-1520,"y":-600,"width":700,"height":1480},
+		{"id":"dicarionte","type":"file","file":"Notas/Dicarionte.md","x":-690,"y":-550,"width":400,"height":260},
+		{"id":"fatores","type":"file","file":"Notas/Fatores de acasalamento A e B.md","x":40,"y":-550,"width":400,"height":260},
+		{"id":"fotoliase","type":"file","file":"Notas/Fotoliase e fotorreativação.md","x":550,"y":10,"width":400,"height":260},
+		{"id":"killcurve","type":"file","file":"Notas/Curva de letalidade UV.md","x":1280,"y":10,"width":400,"height":260},
+		{"id":"2dg","type":"file","file":"Notas/Triagem de mutantes por 2-desoxiglicose.md","x":1790,"y":-550,"width":400,"height":260},
+		{"id":"senescencia","type":"file","file":"Notas/Senescência clonal.md","x":2520,"y":-550,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_dicarionte","fromNode":"foco","fromSide":"right","toNode":"dicarionte","toSide":"left","label":"obstáculo nuclear determina o protocolo"},
+		{"id":"e_fatores_fotoliase","fromNode":"fatores","fromSide":"right","toNode":"fotoliase","toSide":"left","label":"linhagem monocariótica → irradiação UV-C"},
+		{"id":"e_killcurve_2dg","fromNode":"killcurve","fromSide":"right","toNode":"2dg","toSide":"left","label":"sobreviventes da dose ótima → triagem"}
+	]
+}

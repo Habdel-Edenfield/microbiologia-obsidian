@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"grp_diag","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Identificação visual e diagnóstico"},
+		{"id":"grp_fontes","type":"group","x":80,"y":-450,"width":1200,"height":360,"label":"Fontes e vetores de contaminação"},
+		{"id":"grp_controle","type":"group","x":80,"y":0,"width":1200,"height":360,"label":"Triagem, descarte e prevenção"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 11 — Contaminantes — diagnóstico e prevenção.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"enzimas","type":"file","file":"Notas/Enzimas lignocelulolíticas.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"esteril","type":"file","file":"Biblioteca/Cap. 03 — Técnica estéril no cultivo fúngico.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"bulk","type":"file","file":"Biblioteca/Cap. 09 — Substrato em massa e pasteurização.md","x":110,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_enz_foco","fromNode":"enzimas","fromSide":"left","toNode":"foco","toSide":"right","label":"competição enzimática no substrato"},
+		{"id":"e_foco_est","fromNode":"foco","fromSide":"right","toNode":"esteril","toSide":"left","label":"prevenção depende de técnica estéril"},
+		{"id":"e_foco_bulk","fromNode":"foco","fromSide":"right","toNode":"bulk","toSide":"left","label":"pasteurização reduz pressão de contaminantes"}
+	]
+}

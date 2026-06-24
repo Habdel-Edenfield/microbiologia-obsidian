@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "grp_dicarion",
+      "type": "group",
+      "x": 80,
+      "y": -900,
+      "width": 1200,
+      "height": 360,
+      "color": "3",
+      "label": "Regulação — Dicarion amplifica expressão"
+    },
+    {
+      "id": "grp_substrato",
+      "type": "group",
+      "x": 80,
+      "y": -450,
+      "width": 1200,
+      "height": 360,
+      "label": "Substrato — Acesso e detoxificação"
+    },
+    {
+      "id": "grp_desfecho",
+      "type": "group",
+      "x": 80,
+      "y": 0,
+      "width": 1200,
+      "height": 360,
+      "label": "Desfecho — Colonização e frutificação"
+    },
+    {
+      "id": "foco",
+      "type": "file",
+      "file": "Notas/Enzimas lignocelulolíticas.md",
+      "x": -1000,
+      "y": -900,
+      "width": 800,
+      "height": 1260
+    },
+    {
+      "id": "heterose",
+      "type": "file",
+      "file": "Notas/Heterose vegetativa.md",
+      "x": 110,
+      "y": -850,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "resposta",
+      "type": "file",
+      "file": "Notas/Resposta micelial a subprodutos furânicos.md",
+      "x": 110,
+      "y": -400,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "composicao",
+      "type": "file",
+      "file": "Notas/Composição química de cereais para spawn.md",
+      "x": 610,
+      "y": -400,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "frutificacao",
+      "type": "file",
+      "file": "Notas/Frutificação como desfecho experimental.md",
+      "x": 110,
+      "y": 50,
+      "width": 400,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_heterose_foco",
+      "fromNode": "heterose",
+      "fromSide": "left",
+      "toNode": "foco",
+      "toSide": "right",
+      "label": "amplifica via heterose"
+    },
+    {
+      "id": "e_foco_resposta",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "resposta",
+      "toSide": "left",
+      "label": "AAO detoxifica furânicos"
+    },
+    {
+      "id": "e_foco_composicao",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "composicao",
+      "toSide": "left",
+      "label": "acesso condicionado pela matriz"
+    },
+    {
+      "id": "e_foco_frutificacao",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "frutificacao",
+      "toSide": "left",
+      "label": "colonização eficiente precede"
+    }
+  ]
+}

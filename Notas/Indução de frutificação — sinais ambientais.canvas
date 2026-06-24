@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "grp_competencia",
+      "type": "group",
+      "x": 80,
+      "y": -900,
+      "width": 1200,
+      "height": 360,
+      "color": "3",
+      "label": "Competência reprodutiva — Pré-requisito genético"
+    },
+    {
+      "id": "grp_sinais",
+      "type": "group",
+      "x": 80,
+      "y": -450,
+      "width": 1200,
+      "height": 360,
+      "label": "Sinais ambientais — Integração e decisão"
+    },
+    {
+      "id": "grp_desfecho",
+      "type": "group",
+      "x": 80,
+      "y": 0,
+      "width": 1200,
+      "height": 360,
+      "label": "Desfecho e limitações da triagem in vitro"
+    },
+    {
+      "id": "foco",
+      "type": "file",
+      "file": "Notas/Indução de frutificação — sinais ambientais.md",
+      "x": -1000,
+      "y": -900,
+      "width": 800,
+      "height": 1260
+    },
+    {
+      "id": "dicarionte",
+      "type": "file",
+      "file": "Notas/Dicarionte.md",
+      "x": 110,
+      "y": -850,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "mecanossensibilidade",
+      "type": "file",
+      "file": "Notas/Mecanossensibilidade hifal.md",
+      "x": 110,
+      "y": -400,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "plasticidade",
+      "type": "file",
+      "file": "Notas/Plasticidade morfológica e dimorfismo fenotípico.md",
+      "x": 610,
+      "y": -400,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "validade",
+      "type": "file",
+      "file": "Notas/Validade preditiva do cultivo em ágar.md",
+      "x": 110,
+      "y": 50,
+      "width": 400,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_dicarionte_foco",
+      "fromNode": "dicarionte",
+      "fromSide": "left",
+      "toNode": "foco",
+      "toSide": "right",
+      "label": "competência necessária"
+    },
+    {
+      "id": "e_foco_mecanossensibilidade",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "mecanossensibilidade",
+      "toSide": "left",
+      "label": "integra sinais mecânicos"
+    },
+    {
+      "id": "e_foco_plasticidade",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "plasticidade",
+      "toSide": "left",
+      "label": "CO₂ como comutador"
+    },
+    {
+      "id": "e_foco_validade",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "validade",
+      "toSide": "left",
+      "label": "ágar não replica os sinais"
+    }
+  ]
+}

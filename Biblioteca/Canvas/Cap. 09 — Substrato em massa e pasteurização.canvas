@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"grp_composicao","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Composição do bulk e campo de capacidade hídrica"},
+		{"id":"grp_pasteur","type":"group","x":80,"y":-450,"width":1200,"height":360,"label":"Pasteurização e competição microbiana"},
+		{"id":"grp_frutif","type":"group","x":80,"y":0,"width":1200,"height":360,"label":"Colonização e indução de frutificação"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 09 — Substrato em massa e pasteurização.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"composicao","type":"file","file":"Notas/Composição química de cereais para spawn.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"furanic","type":"file","file":"Notas/Resposta micelial a subprodutos furânicos.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"frutif","type":"file","file":"Notas/Indução de frutificação — sinais ambientais.md","x":110,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_comp_foco","fromNode":"composicao","fromSide":"left","toNode":"foco","toSide":"right","label":"fornece base nutricional ao bulk"},
+		{"id":"e_foco_fur","fromNode":"foco","fromSide":"right","toNode":"furanic","toSide":"left","label":"pasteurização gera subprodutos análogos"},
+		{"id":"e_foco_fru","fromNode":"foco","fromSide":"right","toNode":"frutif","toSide":"left","label":"bulk colonizado responde a sinais ambientais"}
+	]
+}

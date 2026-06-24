@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"grp_esterilizacao","type":"group","x":440,"y":-1620,"width":1200,"height":360,"color":"3","label":"Fundamento da esterilização — o que acontece no substrato"},
+		{"id":"grp_substrato","type":"group","x":400,"y":-450,"width":1200,"height":360,"label":"Substrato e inóculo — composição e escolha de grão"},
+		{"id":"grp_fenotipos","type":"group","x":400,"y":0,"width":1200,"height":360,"label":"Leitura e diagnóstico — como o equipamento molda o fenótipo"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 04 — Equipamentos e suprimentos.md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"cereais","type":"file","file":"Notas/Composição química de cereais para spawn.md","x":430,"y":-400,"width":400,"height":260},
+		{"id":"reologia","type":"file","file":"Notas/Reologia do ágar como seletor fenotípico.md","x":1160,"y":-400,"width":400,"height":260},
+		{"id":"mecanoss","type":"file","file":"Notas/Mecanossensibilidade hifal.md","x":430,"y":50,"width":400,"height":260},
+		{"id":"morfologia","type":"file","file":"Notas/Morfologia colonial do micélio.md","x":1160,"y":50,"width":400,"height":260},
+		{"id":"maillard","type":"file","file":"Notas/Reação de Maillard em esterilização úmida de grãos.md","x":470,"y":-1570,"width":400,"height":260},
+		{"id":"furanicos","type":"file","file":"Notas/Resposta micelial a subprodutos furânicos.md","x":1200,"y":-1570,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_maillard","fromNode":"foco","fromSide":"right","toNode":"maillard","toSide":"left","label":"autoclave cria compostos de Maillard — tempo importa"},
+		{"id":"e_foco_furanicos","fromNode":"foco","fromSide":"right","toNode":"furanicos","toSide":"left","label":"excesso de pressão gera HMF que inibe o micélio"},
+		{"id":"e_foco_cereais","fromNode":"foco","fromSide":"right","toNode":"cereais","toSide":"left","label":"escolha do grão define amido e risco de Maillard"},
+		{"id":"e_foco_reologia","fromNode":"foco","fromSide":"right","toNode":"reologia","toSide":"left","label":"concentração do ágar altera rigidez — seletor fenotípico"},
+		{"id":"e_foco_mecanoss","fromNode":"foco","fromSide":"right","toNode":"mecanoss","toSide":"left","label":"geometria do frasco afeta resposta mecânica do micélio"},
+		{"id":"e_foco_morfologia","fromNode":"foco","fromSide":"right","toNode":"morfologia","toSide":"left","label":"substrato e equipamento determinam o fenótipo colonial observado"}
+	]
+}

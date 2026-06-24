@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "id": "grp_genotipo",
+      "type": "group",
+      "x": 100,
+      "y": -900,
+      "width": 920,
+      "height": 320,
+      "color": "3",
+      "label": "Controle do genótipo — pipeline de mutagênese"
+    },
+    {
+      "id": "grp_ambiente",
+      "type": "group",
+      "x": 100,
+      "y": -490,
+      "width": 920,
+      "height": 320,
+      "label": "Controle do ambiente — variáveis acopladas"
+    },
+    {
+      "id": "grp_validade",
+      "type": "group",
+      "x": 100,
+      "y": -80,
+      "width": 920,
+      "height": 320,
+      "label": "Validade e limites de inferência"
+    },
+    {
+      "id": "foco",
+      "type": "file",
+      "file": "Notas/Interação genótipo × ambiente na frutificação.md",
+      "x": -1000,
+      "y": -900,
+      "width": 800,
+      "height": 1140
+    },
+    {
+      "id": "mutacao",
+      "type": "file",
+      "file": "Notas/Mutagênese UV em basidiomicetos.md",
+      "x": 130,
+      "y": -870,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "desfecho",
+      "type": "file",
+      "file": "Notas/Frutificação como desfecho experimental.md",
+      "x": 590,
+      "y": -870,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "co2",
+      "type": "file",
+      "file": "Notas/CO2 como ponto de controle por fase de cultivo.md",
+      "x": 130,
+      "y": -460,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "confundimento",
+      "type": "file",
+      "file": "Notas/Confundimento de variáveis em sistemas de cultivo.md",
+      "x": 590,
+      "y": -460,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "plasticidade",
+      "type": "file",
+      "file": "Notas/Plasticidade morfológica e dimorfismo fenotípico.md",
+      "x": 130,
+      "y": -50,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "validade",
+      "type": "file",
+      "file": "Notas/Validade preditiva do cultivo em ágar.md",
+      "x": 590,
+      "y": -50,
+      "width": 400,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_foco_mutacao",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "mutacao",
+      "toSide": "left",
+      "label": "controle do genótipo — dicarion clonal"
+    },
+    {
+      "id": "e_foco_desfecho",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "desfecho",
+      "toSide": "left",
+      "label": "medida-fim — fenótipo reprodutivo"
+    },
+    {
+      "id": "e_foco_co2",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "co2",
+      "toSide": "left",
+      "label": "controle do ambiente — CO₂ por fase"
+    },
+    {
+      "id": "e_foco_confundimento",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "confundimento",
+      "toSide": "left",
+      "label": "variáveis acopladas invalidam atribuição causal"
+    },
+    {
+      "id": "e_foco_plasticidade",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "plasticidade",
+      "toSide": "left",
+      "label": "mesmo genótipo, fenótipos distintos por ambiente"
+    },
+    {
+      "id": "e_foco_validade",
+      "fromNode": "foco",
+      "fromSide": "right",
+      "toNode": "validade",
+      "toSide": "left",
+      "label": "ambiente de triagem não replica frutificação"
+    }
+  ]
+}

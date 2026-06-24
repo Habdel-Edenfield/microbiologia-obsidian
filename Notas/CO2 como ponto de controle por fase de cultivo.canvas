@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"grp_sinal","type":"group","x":100,"y":-900,"width":920,"height":320,"color":"3","label":"Sinal ambiental — fisiologia e integração"},
+		{"id":"grp_desfecho","type":"group","x":100,"y":-490,"width":920,"height":320,"label":"Desfecho fenotípico — morfologia e seleção"},
+		{"id":"grp_limite","type":"group","x":100,"y":-80,"width":460,"height":320,"label":"Limite metodológico — confundimento e validade"},
+		{"id":"foco","type":"file","file":"Notas/CO2 como ponto de controle por fase de cultivo.md","x":-1000,"y":-900,"width":800,"height":1140},
+		{"id":"inducao","type":"file","file":"Notas/Indução de frutificação — sinais ambientais.md","x":130,"y":-870,"width":400,"height":260},
+		{"id":"mecanossensibilidade","type":"file","file":"Notas/Mecanossensibilidade hifal.md","x":590,"y":-870,"width":400,"height":260},
+		{"id":"plasticidade","type":"file","file":"Notas/Plasticidade morfológica e dimorfismo fenotípico.md","x":130,"y":-460,"width":400,"height":260},
+		{"id":"desfecho","type":"file","file":"Notas/Frutificação como desfecho experimental.md","x":590,"y":-460,"width":400,"height":260},
+		{"id":"validade","type":"file","file":"Notas/Validade preditiva do cultivo em ágar.md","x":130,"y":-50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_inducao","fromNode":"foco","fromSide":"right","toNode":"inducao","toSide":"left","label":"CO₂ como sinal indutor"},
+		{"id":"e_foco_mecanossensibilidade","fromNode":"foco","fromSide":"right","toNode":"mecanossensibilidade","toSide":"left","label":"integra sinal físico e químico"},
+		{"id":"e_foco_plasticidade","fromNode":"foco","fromSide":"right","toNode":"plasticidade","toSide":"left","label":"continuum dimórfico modulado por CO₂"},
+		{"id":"e_foco_desfecho","fromNode":"foco","fromSide":"right","toNode":"desfecho","toSide":"left","label":"CO₂ deve ser controlado para fenótipo interpretável"},
+		{"id":"e_foco_validade","fromNode":"foco","fromSide":"right","toNode":"validade","toSide":"left","label":"confundimento FAE–umidade análogo ao ágar–substrato"}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"grp_substrato","type":"group","x":80,"y":-900,"width":1200,"height":360,"color":"3","label":"Substrato BRF+Verm — composição e preparo"},
+		{"id":"grp_coloniz","type":"group","x":80,"y":-450,"width":1200,"height":360,"label":"Inóculo e colonização"},
+		{"id":"grp_frutif","type":"group","x":80,"y":0,"width":1200,"height":360,"label":"Frutificação e câmara"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 06 — Método PF (Brown Rice Flour Tek).md","x":-1000,"y":-900,"width":800,"height":1260},
+		{"id":"bulk","type":"file","file":"Biblioteca/Cap. 09 — Substrato em massa e pasteurização.md","x":110,"y":-850,"width":400,"height":260},
+		{"id":"esteril","type":"file","file":"Biblioteca/Cap. 03 — Técnica estéril no cultivo fúngico.md","x":110,"y":-400,"width":400,"height":260},
+		{"id":"frutif","type":"file","file":"Notas/Indução de frutificação — sinais ambientais.md","x":110,"y":50,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_bulk_foco","fromNode":"bulk","fromSide":"left","toNode":"foco","toSide":"right","label":"precede em escala e complexidade"},
+		{"id":"e_foco_est","fromNode":"foco","fromSide":"right","toNode":"esteril","toSide":"left","label":"depende de técnica estéril"},
+		{"id":"e_foco_fru","fromNode":"foco","fromSide":"right","toNode":"frutif","toSide":"left","label":"bolo colonizado responde a sinais"}
+	]
+}

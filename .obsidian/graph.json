@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"_Modelos\" -path:\"Bases\" -path:\"Scripts\" -file:\"AGENTS\" -file:\"_Padrões do vault\"",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"Aulas/\"",
+      "color": {
+        "a": 1,
+        "rgb": 9136404
+      }
+    },
+    {
+      "query": "path:\"Notas/\"",
+      "color": {
+        "a": 1,
+        "rgb": 5259312
+      }
+    },
+    {
+      "query": "path:\"Fontes/\"",
+      "color": {
+        "a": 1,
+        "rgb": 3552822
+      }
+    },
+    {
+      "query": "path:\"Pesquisa/\"",
+      "color": {
+        "a": 1,
+        "rgb": 3817552
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 1.2484375,
+  "lineSizeMultiplier": 0.865625,
+  "collapse-forces": false,
+  "centerStrength": 0.286458333333333,
+  "repelStrength": 9.58333333333333,
+  "linkStrength": 0.619791666666667,
+  "linkDistance": 30,
+  "scale": 0.200225830078125,
+  "close": true
+}

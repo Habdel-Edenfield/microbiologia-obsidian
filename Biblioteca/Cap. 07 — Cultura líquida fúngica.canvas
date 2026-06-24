@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"grp_controle","type":"group","x":1000,"y":120,"width":1200,"height":800,"label":"Controle e aplicação"},
+		{"id":"grp_genetica","type":"group","x":1280,"y":-640,"width":1200,"height":660,"color":"3","label":"Estado nuclear e propagação"},
+		{"id":"grp_processamento","type":"group","x":840,"y":-1080,"width":1200,"height":360,"label":"Formulação e processamento"},
+		{"id":"foco","type":"file","file":"Biblioteca/Cap. 07 — Cultura líquida fúngica.md","x":-1000,"y":-900,"width":800,"height":1860},
+		{"id":"dicarionte","type":"file","file":"Notas/Dicarionte.md","x":1310,"y":-590,"width":400,"height":260},
+		{"id":"dikaryotizacao","type":"file","file":"Notas/Anastomose hifal e dikaryotização.md","x":2040,"y":-590,"width":400,"height":260},
+		{"id":"propagacao","type":"file","file":"Notas/Propagação vegetativa.md","x":1310,"y":-290,"width":400,"height":260},
+		{"id":"senescencia","type":"file","file":"Notas/Senescência clonal.md","x":2040,"y":-290,"width":400,"height":260},
+		{"id":"maillard","type":"file","file":"Notas/Reação de Maillard em esterilização úmida de grãos.md","x":870,"y":-1030,"width":400,"height":260},
+		{"id":"equipamentos","type":"file","file":"Biblioteca/Cap. 04 — Equipamentos e suprimentos.md","x":1600,"y":-1030,"width":400,"height":260},
+		{"id":"tecnica","type":"file","file":"Biblioteca/Cap. 03 — Técnica estéril no cultivo fúngico.md","x":1030,"y":240,"width":400,"height":260},
+		{"id":"agar","type":"file","file":"Biblioteca/Cap. 10 — Cultivo em ágar e isolamento clonal.md","x":1760,"y":310,"width":400,"height":260},
+		{"id":"contaminantes","type":"file","file":"Biblioteca/Cap. 11 — Contaminantes — diagnóstico e prevenção.md","x":1030,"y":610,"width":400,"height":260},
+		{"id":"spawn","type":"file","file":"Biblioteca/Cap. 08 — Spawn de grão — preparação e uso.md","x":1760,"y":610,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_maillard","fromNode":"foco","fromSide":"right","toNode":"maillard","toSide":"left","label":"processamento térmico pode gerar"},
+		{"id":"e_foco_equipamentos","fromNode":"foco","fromSide":"right","toNode":"equipamentos","toSide":"left","label":"depende de recipiente e agitação"},
+		{"id":"e_foco_dicarionte","fromNode":"foco","fromSide":"right","toNode":"dicarionte","toSide":"left","label":"propaga estado dicariótico"},
+		{"id":"e_foco_dikaryotizacao","fromNode":"foco","fromSide":"right","toNode":"dikaryotizacao","toSide":"left","label":"origem multiespórica requer"},
+		{"id":"e_foco_propagacao","fromNode":"foco","fromSide":"right","toNode":"propagacao","toSide":"left","label":"constitui propagação vegetativa"},
+		{"id":"e_foco_senescencia","fromNode":"foco","fromSide":"right","toNode":"senescencia","toSide":"left","label":"subcultivo prolongado pode favorecer"},
+		{"id":"e_foco_tecnica","fromNode":"foco","fromSide":"right","toNode":"tecnica","toSide":"left","label":"depende de técnica asséptica"},
+		{"id":"e_foco_agar","fromNode":"foco","fromSide":"right","toNode":"agar","toSide":"left","label":"é verificada em ágar"},
+		{"id":"e_foco_contaminantes","fromNode":"foco","fromSide":"right","toNode":"contaminantes","toSide":"left","label":"pode carregar contaminação latente"},
+		{"id":"e_foco_spawn","fromNode":"foco","fromSide":"right","toNode":"spawn","toSide":"left","label":"inocula spawn de grão"}
+	]
+}

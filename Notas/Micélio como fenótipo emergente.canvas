@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"grp_nuclear","type":"group","x":80,"y":800,"width":1720,"height":1080,"label":"Organização nuclear — Dicarionte, heterose e conflito genômico"},
+		{"id":"grp_epigenetica","type":"group","x":80,"y":-190,"width":1200,"height":870,"label":"Regulação epigenética — Memória e silenciamento"},
+		{"id":"grp_biofisica","type":"group","x":80,"y":-1080,"width":1200,"height":800,"color":"3","label":"Restrições biofísicas — Substrato como seletor fenotípico"},
+		{"id":"foco","type":"file","file":"Notas/Micélio como fenótipo emergente.md","x":-1000,"y":-900,"width":800,"height":2340},
+		{"id":"morfologia","type":"file","file":"Notas/Morfologia colonial do micélio.md","x":110,"y":-560,"width":400,"height":260},
+		{"id":"reologia","type":"file","file":"Notas/Reologia do ágar como seletor fenotípico.md","x":110,"y":-1030,"width":400,"height":260},
+		{"id":"mecano","type":"file","file":"Notas/Mecanossensibilidade hifal.md","x":840,"y":-1030,"width":400,"height":260},
+		{"id":"agar","type":"file","file":"Notas/Validade preditiva do cultivo em ágar.md","x":840,"y":-560,"width":400,"height":260},
+		{"id":"h3k27","type":"file","file":"Notas/H3K27me3 e silenciamento epigenético.md","x":840,"y":-120,"width":400,"height":260},
+		{"id":"metilacao","type":"file","file":"Notas/Metilação de DNA na fase micelial.md","x":110,"y":-120,"width":400,"height":260},
+		{"id":"prata","type":"file","file":"Notas/Efeito colher de prata.md","x":110,"y":400,"width":400,"height":260},
+		{"id":"dicarionte","type":"file","file":"Notas/Dicarionte.md","x":110,"y":870,"width":400,"height":260},
+		{"id":"estequiometria","type":"file","file":"Notas/Estequiometria nuclear e conflito genômico.md","x":1360,"y":1570,"width":400,"height":260},
+		{"id":"mitonu","type":"file","file":"Notas/Epistasia mitonuclear.md","x":1320,"y":870,"width":400,"height":260},
+		{"id":"monoalelica","type":"file","file":"Notas/Expressão monoalélica no dicarião.md","x":720,"y":870,"width":400,"height":260},
+		{"id":"heterose","type":"file","file":"Notas/Heterose vegetativa.md","x":720,"y":1310,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"e_foco_reologia","fromNode":"foco","fromSide":"right","toNode":"reologia","toSide":"left","label":"restrição biofísica"},
+		{"id":"e_foco_metilacao","fromNode":"foco","fromSide":"right","toNode":"metilacao","toSide":"left","label":"filtro epigenético"},
+		{"id":"e_foco_dicarionte","fromNode":"foco","fromSide":"right","toNode":"dicarionte","toSide":"left","label":"organização nuclear"},
+		{"id":"e_foco_prata","fromNode":"foco","fromSide":"right","toNode":"prata","toSide":"left","label":"memória parental"},
+		{"id":"e_reologia_mecano","fromNode":"reologia","fromSide":"right","toNode":"mecano","toSide":"left","label":"ativa via CWI"},
+		{"id":"e_reologia_morfologia","fromNode":"reologia","fromSide":"bottom","toNode":"morfologia","toSide":"top","label":"determina"},
+		{"id":"e_mecano_agar","fromNode":"mecano","fromSide":"bottom","toNode":"agar","toSide":"top","label":"explica limitação de"},
+		{"id":"e_metilacao_h3k27","fromNode":"metilacao","fromSide":"right","toNode":"h3k27","toSide":"left","label":"complementar a"},
+		{"id":"e_dicarionte_heterose","fromNode":"dicarionte","fromSide":"right","toNode":"heterose","toSide":"left","label":"base de"},
+		{"id":"e_heterose_monoalelica","fromNode":"heterose","fromSide":"top","toNode":"monoalelica","toSide":"top","label":"inclui"},
+		{"id":"e_monoalelica_estequiometria","fromNode":"monoalelica","fromSide":"right","toNode":"estequiometria","toSide":"left","label":"co-ocorre com"},
+		{"id":"e_estequiometria_mitonu","fromNode":"estequiometria","fromSide":"top","toNode":"mitonu","toSide":"right","label":"interage com"}
+	]
+}
