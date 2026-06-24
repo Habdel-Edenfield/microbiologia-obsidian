@@ -184,5 +184,11 @@ while IFS= read -r -d '' note; do
   fi
 done < <(find Notas -type f -name '*.md' -print0)
 
+if command -v python3 >/dev/null 2>&1 &&
+  python3 -c 'import yaml' >/dev/null 2>&1; then
+  printf '\n--- Candidatos de conexão ---\n'
+  python3 Scripts/detectar-candidatos.py || true
+fi
+
 printf '\nResultado: %d erro(s), %d aviso(s).\n' "$errors" "$warnings"
 ((errors == 0))
