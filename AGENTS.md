@@ -23,3 +23,15 @@ Regras obrigatórias:
 bash Scripts/validar-vault.sh
 ```
 
+8. **Critérios de incorporação cross-note.** Ao criar ou modificar uma nota,
+   verificar se o novo conteúdo pertence a notas existentes:
+   - Extrair eixos, organismos, tags e fontes-chave do frontmatter.
+   - Buscar com `rg` notas que compartilhem ≥1 desses termos em `Notas/`, `Biblioteca/`.
+   - Para candidatos não presentes em `relacionados`: avaliar relevância.
+   - Escrever propostas em `_FILA_REVISAO.md`; nunca editar a nota-alvo.
+
+9. **Proteção de notas com `status: completa`.** Proibido editar diretamente.
+   Toda proposta de alteração vai para `_FILA_REVISAO.md` com nota-alvo,
+   nota-fonte, conteúdo proposto, justificativa e eixos compartilhados.
+   A edição só ocorre após aprovação explícita do usuário.
+
