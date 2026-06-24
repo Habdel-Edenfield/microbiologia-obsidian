@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/habdel/microbiologia/Scripts/hook-proteger-completa.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/habdel/microbiologia/Scripts/hook-registrar-curar.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
