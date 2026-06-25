@@ -1,0 +1,18 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Python
+Scripts/__pycache__/
+*.pyc
+*.pyo
+
+# Temporários
+*.tmp
+*.log
